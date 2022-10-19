@@ -4,3 +4,10 @@ const nextConfig = {
 }
 
 module.exports = nextConfig
+// next.config.js
+const debug = process.env.NODE_ENV !== 'production'
+const name = 'react-nextjs-typescript'
+
+module.exports = {
+  assetPrefix: !debug ? `/${name}/` : '',
+}
