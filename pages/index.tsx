@@ -28,7 +28,7 @@ const Home = ({ allPostsData }: {
         <ul className={homeStyles.list}>
           {allPostsData.map(({ id, date, title }) => (
             <li className={homeStyles.listItem} key={id}>
-              <Link href={`/react-nextjs-typescript/posts/${id}`}>
+              <Link href={`/posts/${id}`}>
                 <a>{title}</a>
               </Link>
               <br />
