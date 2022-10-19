@@ -28,7 +28,7 @@ const Home = ({ allPostsData }: {
         <ul className={homeStyles.list}>
           {allPostsData.map(({ id, date, title }) => (
             <li className={homeStyles.listItem} key={id}>
-              <Link href={`/posts/${id}`}>
+              <Link href={`${process.env.BACKEND_URL}/posts/${id}`}>
                 <a>{title}</a>
               </Link>
               <br />
