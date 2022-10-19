@@ -10,7 +10,5 @@ const name = 'react-nextjs-typescript'
 
 module.exports = {
   assetPrefix: !debug ? `/${name}/` : '',
-  env: {
-    BACKEND_URL: '/react-nextjs-typescript',
-  },
+  basePath: '/react-nextjs-typescript',
 }
